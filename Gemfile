@@ -15,6 +15,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'sidekiq', '~> 3.3', '>= 3.3.1'
 gem 'sinatra', '~> 1.4', '>= 1.4.5', :require => nil
 
+gem 'virtus', '~> 1.0', '>= 1.0.4'
+
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
