@@ -20,4 +20,5 @@ end
 
 group :production do
   gem 'puma', '~> 2.11'
+  gem 'rails_12factor', '~> 0.0', '>= 0.0.3'
 end
