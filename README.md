@@ -1,13 +1,30 @@
-# ATLDevs
+# tech404 inviter
 
 The application behind the [tech404 automatic invitation system](http://tech404.io)
 
-## Prerequisites
+## Usage
+
+### POST /invitations
+
+To enqueue an invitation request:
+
+```bash
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -d "{\"email\":\"andy@example.com\"}" \
+  http://localhost:3000/invitations
+```
+
+The route is meant to be used by a JavaScript client. You can whitelist CORS origins in `config/application.rb`.
+
+## Development
+
+### Prerequisites
 
 * PostgreSQL: `brew install postgresql`
 * Redis: `brew install redis`
 
-## Required Configuration
+### Required Configuration
 
 Configuration items are stored in environment variables.
 
