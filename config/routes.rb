@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get "/_ping", to: Proc.new { |env| [200, {"Content-Type" => "text/plain"}, []] }
+
   resources :invitations, only: [:create]
 
   require "sidekiq/web"
