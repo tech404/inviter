@@ -28,7 +28,7 @@ The route is meant to be used by a JavaScript client. You can whitelist CORS ori
 
 Configuration items are stored in environment variables.
 
-* SLACK_SUBDOMAIN: e.g., atldevs for atldevs.slack.com
+* SLACK_SUBDOMAIN: e.g., tech404 for tech404.slack.com
 * SLACK_TOKEN: an API token for an administrator of the organization
 * SIDEKIQ_USERNAME: username for the sidekiq administration area
 * SIDEKIQ_PASSWORD: password for the sidekiq administration area
