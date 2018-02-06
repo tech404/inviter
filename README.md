@@ -1,6 +1,6 @@
 # tech404 inviter
 
-The application behind the [tech404 automatic invitation system](http://tech404.io)
+The application behind the [tech404 automatic invitation system](https://tech404.github.io)
 
 ## Usage
 
