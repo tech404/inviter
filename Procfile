@@ -1,2 +1,1 @@
-web: bundle exec puma -C config/puma.rb
-sidekiq: bundle exec sidekiq
+web: bundle exec foreman start --procfile=Procfile.heroku
