@@ -31,3 +31,5 @@ group :production do
   gem 'puma', '~> 3.0'
   gem 'rails_12factor', '~> 0.0', '>= 0.0.3'
 end
+
+gem "dockerfile-rails", ">= 1.1", :group => :development
