@@ -10,6 +10,8 @@ processes = []
   RACK_ENV = "production"
   RAILS_ENV = "production"
   REDIS_PROVIDER = "REDIS_URL"
+  WEB_CONCURRENCY = "1"
+  MAX_THREADS = "5"
 
 [experimental]
   auto_rollback = true
