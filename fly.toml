@@ -8,6 +8,7 @@ processes = []
 [env]
   RACK_ENV = "production"
   RAILS_ENV = "production"
+  REDIS_PROVIDER = "REDIS_URL"
 
 [experimental]
   auto_rollback = true
