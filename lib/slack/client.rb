@@ -5,14 +5,16 @@ module Slack
     RequestFailed = Class.new(StandardError)
     InviteFailed = Class.new(StandardError)
 
-    def initialize(subdomain:, token:)
+    def initialize(subdomain:, token:, d:)
       @subdomain = subdomain
       @token = token
+      @d = d
     end
 
     def invite(email:, channels: [])
       res = Net::HTTP.start("#{@subdomain}.slack.com", 443, use_ssl: true) do |http|
         req = Net::HTTP::Post.new("/api/users.admin.invite?t=#{Time.now.to_i}")
+        req["Cookie"] = "d=#{@d}"
         req.set_form_data \
           email:       email,
           channels:    channels.join(","),
