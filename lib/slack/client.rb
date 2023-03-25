@@ -28,7 +28,7 @@ module Slack
       raise RequestFailed.new("HTTP status: #{res}") unless res.is_a?(Net::HTTPSuccess)
 
       body = JSON.parse(res.body)
-      if !(body["ok"] || %w(already_in_team already_invited sent_recently).include?(body["error"]))
+      if !(body["ok"] || %w(already_in_team already_in_team_invited_user already_invited sent_recently).include?(body["error"]))
         raise InviteFailed.new(body.to_s)
       end
 
